@@ -34,6 +34,19 @@ spring.jpa.properties.hibernate.order_inserts=true #for batch insertion
 spring.jpa.show-sql=true
 
 ```
+### Formato e atributos
+Ao adicionar um novo pais deve-se fornecer os atribuitos para que se crie o pais. I ID é gereado automaticamente assim com a data de registo.
+No caso de atualização, todo o elemento deve ser introduzido incluindo o id para que se possa atualizar o elemento em questão.
+
+```rest
+{
+        "nome": "",
+        "capital": "",
+        "regiao": "",
+        "subRegiao": "",
+        "area": ""
+}
+```
 
 
 ## API ENDPOINTS
