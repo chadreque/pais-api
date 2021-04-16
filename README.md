@@ -4,8 +4,8 @@
 
 Aplicação rest desenvolvida em Spring Boot e Jersey JAX-RS para desafio de candidatura
 
-Um desafio de código para a 2iBi no âmbito da vaga de Back-End Engineer. Rest desenvolvido em Java, implementando o padrão Rx-Js em Jersey e Spring Boot.
-Visa em disponibilizar uma API que contem propriedades de um pais. Nela e' possivel criar uma novo pais nao existente, buscar um ou varios paises existente, actualizar um pais, eliminar um pais e ordenar os paises de acordo com os atributos do pais.
+Um desafio de código da [2iBi](https://2ibi.com/) no âmbito da vaga de Back-End Engineer. Rest desenvolvido em Java, implementando o padrão Rx-Js em Jersey e Spring Boot.
+Visa em disponibilizar uma API que contem propriedades de um pais. Nela é possivel criar uma novo pais nao existente, buscar um ou varios paises existente, actualizar um pais, eliminar um pais e ordenar os paises de acordo com os atributos do pais.
 
 ---
 
@@ -66,6 +66,12 @@ No caso de atualização, todo o elemento deve ser introduzido incluindo o id pa
 ##### ELEIMINAR PAIS (DELETE)
 - localhost/paises/{id}
 
+
+##### BUSCA ORDENADA (GET)
+- localhost/paises?orderby={nome-atributo}&ordertype={asc}
+- localhost/paises?orderby={nome-atributo}&ordertype={desc}
+
+Caso seja omitido o ordertype (localhost/paises?orderby={nome-atributo}), ordena por padrão {asc}
 
 ## Live Demo
 
